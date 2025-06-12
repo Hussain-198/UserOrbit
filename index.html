@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- <link rel="stylesheet" href="/styles.css"> -->
+</head>
+<body>
+    <header>
+      <nav class="custom-navbar">
+        <div class="custom-navbar-container">
+          <a href="https://flowbite.com/" class="custom-navbar-logo">
+            <img src="/userorbit logo.jpg" alt="Flowbite Logo" />
+            <span id="logo-text">UserOrbit</span>
+          </a>
+          <div class="custom-navbar-menu">
+            <a href="#" class="home">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Welcome to UserOrbit</h1>
+          <p class="hero-subtitle">Transform your user feedback into actionable insights</p>
+          <div class="hero-buttons">
+            <button class="primary-button">Get Started</button>
+            <button class="secondary-button">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3" alt="Dashboard Preview" />
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <h2>Why Choose UserOrbit?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Real-time Analytics</h3>
+            <p>Get instant insights into user behavior and feedback patterns</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Targeting</h3>
+            <p>Reach the right users at the right time with our AI-powered system</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Seamless Integration</h3>
+            <p>Works with your favorite tools and platforms effortlessly</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Enterprise Security</h3>
+            <p>Bank-grade security to keep your data safe and compliant</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="cta-content">
+          <h2>Ready to Transform Your User Experience?</h2>
+          <p>Join thousands of companies already using UserOrbit to improve their products</p>
+          <button class="cta-button">Start Free Trial</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="info-widget" class="widget-closed">
+        <div class="widget-content">
+          <div class="widget-header">
+            <span class="widget-date">APR 8</span>
+            <span class="widget-badge">NEW</span>
+          </div>
+          <div class="widget-title">Latest Product Updates</div>
+          <div class="widget-desc">Discover what's new in UserOrbit - from AI-powered insights to enhanced analytics</div>
+          
+          <div class="widget-highlight">
+            <div class="highlight-icon">✨</div>
+            <div class="highlight-content">
+              <h4>AI Feedback Analysis</h4>
+              <p>Our new AI system automatically categorizes and prioritizes user feedback</p>
+            </div>
+          </div>
+
+          <div class="widget-stats">
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Analysis</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10x</span>
+              <span class="stat-label">Faster</span>
+            </div>
+          </div>
+
+          <div class="widget-updates">
+            <div class="update-item">
+              <div class="update-header">
+                <span class="update-date">MAR 28</span>
+                <span class="update-tag">Feature</span>
+              </div>
+              <h4>Real-time Analytics Dashboard</h4>
+              <p>Monitor user feedback trends and patterns in real-time with our new dashboard</p>
+            </div>
+            <div class="update-item">
+              <div class="update-header">
+                <span class="update-date">MAR 15</span>
+                <span class="update-tag">Improvement</span>
+              </div>
+              <h4>Enhanced Export Options</h4>
+              <p>Export your data in multiple formats with advanced filtering options</p>
+            </div>
+          </div>
+
+          <div class="widget-cta">
+            <button class="widget-button">Try New Features</button>
+          </div>
+          <div class="widget-tabs">
+            <button class="active">Updates</button>
+            <button>Feedback</button>
+            <button>Roadmap</button>
+          </div>
+        </div>
+        
+    </div>
+    <button id="widget-toggle" class="widget-toggle">☰</button>
+    
+      
+    <script>
+      // Simple open/close toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const widget = document.getElementById('info-widget');
+        const toggle = document.getElementById('widget-toggle');
+        toggle.addEventListener('click', function() {
+          widget.classList.toggle('widget-closed');
+        });
+      });
+    </script>
+</body>
+</html>
